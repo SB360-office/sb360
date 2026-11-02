@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#10213b"><meta name="description" content="SB 360 personal office dashboard">
+<meta name="theme-color" content="#B85C0A"><meta name="description" content="SB 360 personal office dashboard">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png">
 <title>SB 360 | Office Manager</title>
 <style>
@@ -35,6 +35,23 @@
 }
 @media(max-width:360px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.card,.panel{padding:10px}.metric{font-size:19px}.metric-label{font-size:12px}.metric-note,.card-link{font-size:11px}.pagehead h1{font-size:21px}.navbtn{font-size:12px;padding:9px 4px}.top-right{max-width:105px}}
 @media(min-width:601px) and (max-width:850px){.sidebar{display:flex;overflow-x:auto}.navbtn{white-space:nowrap;width:auto}}
+
+/* SB 360 Premium Saffron Theme */
+:root{--navy:#B85C0A;--blue:#D97706;--bg:#FFF9F0;--card:#FFFFFF;--text:#30251C;--muted:#817264;--line:#F1DFC8;--green:#13865b;--red:#c44747;--amber:#b7791f;--shadow:0 8px 24px rgba(139,75,20,.08)}
+.top{background:linear-gradient(115deg,#A94706,#D97706 62%,#E99524)}
+.brand small{color:#FFE7C2}
+.navbtn{color:#665342}
+.navbtn.active,.navbtn:hover{background:#FFF0D9;color:#A84B08}
+.card.clickable:hover,.card.clickable:focus-visible{box-shadow:0 10px 28px rgba(139,75,20,.16);outline-color:#D97706}
+.card-link{color:#B85C0A}
+.btn{background:#D97706}
+.btn:hover{background:#B85C0A}
+.btn.secondary{background:#FFF0D9;color:#A84B08}
+.btn.ghost{background:#F7F0E7;color:#665342}
+input:focus,select:focus,textarea:focus{outline:2px solid #F2B66D;outline-offset:1px;border-color:#D97706}
+.progress i{background:#D97706}
+.close{background:#FFF0D9;color:#A84B08}
+
 </style></head><body><div class="app">
 <header class="top"><div class="brand">SB 360 <small>SMART OFFICE MANAGEMENT</small></div><div class="top-right"><div id="today"></div><div>Personal Office Workspace</div></div></header>
 <div class="layout"><aside class="sidebar" id="nav">
